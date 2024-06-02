@@ -1,0 +1,134 @@
+:root {
+    
+    --gray: #34495e;
+    --darkgray: #2c3e50;
+  }
+
+
+table {
+    max-width: 960px;
+    margin: 10px auto;
+  }
+  
+  caption {
+    font-size: 1.6em;
+    font-weight: 400;
+    padding: 10px 0;
+  }
+  
+  thead th {
+    font-weight: 400;
+    background: #8a97a0;
+    color: #FFF;
+  }
+  
+  tr {
+    background: #f4f7f8;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 5px;
+  }
+  
+  tr:nth-child(even) {
+    background: #e8eeef;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 20px;
+    font-weight: 300;
+  }
+  
+  tfoot tr {
+    background: none;
+  }
+  
+  tfoot td {
+    padding: 10px 2px;
+    font-size: 0.8em;
+    font-style: italic;
+    color: #8a97a0;
+  }
+  
+
+  
+
+/* CSS */
+.button-1 {
+    width: 75%;
+    background-color: #5c3cd1dc;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-1:hover,
+  .button-1:focus {
+    background-color: #1245a5;
+  }
+
+  .custom-select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    
+  }
+  
+  .custom-select select {
+    appearance: none; /* Removes default styling */
+    -webkit-appearance: none; /* For Chrome and Safari */
+    -moz-appearance: none; /* For Firefox */
+    background: transparent;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 5px;
+  }
+  .custom-select option {
+    appearance: none; /* Removes default styling */
+    -webkit-appearance: none; /* For Chrome and Safari */
+    -moz-appearance: none; /* For Firefox */
+    background: transparent;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 5px;
+  }
+
+  .custom-select::after {
+    content: '▼'; /* Unicode character for a downward arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensures clicks go to the select element below */
+  }
+  
+  

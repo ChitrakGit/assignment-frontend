@@ -1,0 +1,42 @@
+<div style="display: flex;justify-content: center;">
+  <button class="button-1" role="button" (click)="navigateToAddPage()" >Add User</button>
+</div>
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Dynamically populate rows -->
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.address }}</td>
+        <td>{{ user.phoneNumber }}</td>
+        <td>
+           <div  class="custom-select">
+            <select class="select" (change)="navigateToEdit($event,user.phoneNumber)">
+              <option style="text-align: center;" value="">Select</option>
+              <option style="text-align: center;" value="edit">Edit</option>
+              <option style="text-align: center;" value="view">View</option>
+              <option style="text-align: center;" value="download">Download</option>
+              <option style="text-align: center;" value="delete">Delete</option>
+            </select>
+           </div>
+              
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+    
+ 
+
+  
